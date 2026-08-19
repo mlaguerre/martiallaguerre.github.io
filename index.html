@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Martial Laguerre — Doctorant en économie</title>
+<meta name="description" content="Site personnel de Martial Laguerre, doctorant en statistiques et économétrie — Université Lyon 1 / emlyon Business School.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="#presentation" data-tab-link="presentation">
+    <span class="brand-name">Martial Laguerre</span>
+  </a>
+  <nav class="tabs" role="tablist" aria-label="Navigation principale">
+    <button class="tab-link is-active" role="tab" aria-selected="true" data-tab-link="presentation">Présentation</button>
+    <button class="tab-link" role="tab" aria-selected="false" data-tab-link="publications">Publications</button>
+    <button class="tab-link" role="tab" aria-selected="false" data-tab-link="enseignement">Enseignement</button>
+    <button class="tab-link" role="tab" aria-selected="false" data-tab-link="cv">CV</button>
+  </nav>
+  <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+
+  <!-- ============ PRESENTATION ============ -->
+  <section id="presentation" class="tab-panel is-active" role="tabpanel">
+
+    <div class="hero">
+      <svg class="hero-fig" viewBox="0 0 520 320" aria-hidden="true">
+        <!-- axes -->
+        <line x1="40" y1="270" x2="480" y2="270" class="fig-axis"></line>
+        <line x1="40" y1="270" x2="40" y2="30" class="fig-axis"></line>
+        <!-- scatter -->
+        <g class="fig-dots">
+          <circle cx="70"  cy="230" r="4"></circle>
+          <circle cx="110" cy="205" r="4"></circle>
+          <circle cx="140" cy="240" r="4"></circle>
+          <circle cx="175" cy="180" r="4"></circle>
+          <circle cx="205" cy="200" r="4"></circle>
+          <circle cx="230" cy="150" r="4"></circle>
+          <circle cx="265" cy="175" r="4"></circle>
+          <circle cx="300" cy="120" r="4"></circle>
+          <circle cx="330" cy="140" r="4"></circle>
+          <circle cx="360" cy="95"  r="4"></circle>
+          <circle cx="395" cy="110" r="4"></circle>
+          <circle cx="425" cy="70"  r="4"></circle>
+          <circle cx="455" cy="85"  r="4"></circle>
+        </g>
+        <!-- fitted line -->
+        <line x1="55" y1="255" x2="470" y2="55" class="fig-fit"></line>
+      </svg>
+
+      <p class="eyebrow">Doctorant · Statistiques &amp; Économétrie</p>
+      <h1 class="hero-name">Martial<br>Laguerre</h1>
+      <p class="hero-affiliation">Université Lyon 1 — emlyon Business School</p>
+
+      <p class="hero-intro">
+        <!-- MODIFIER : remplace ce paragraphe par une présentation de 3–4 lignes de ton sujet de thèse et de ton parcours. -->
+        Mes travaux portent sur [sujet de thèse — ex. « l'estimation de modèles à variables instrumentales appliqués aux marchés du travail »], sous la direction de [Nom du directeur / de la directrice]. Je m'intéresse plus largement aux méthodes économétriques appliquées à [domaine d'application].
+      </p>
+
+      <ul class="contact-row">
+        <li><a href="mailto:martial.laguerre@example.fr">martial.laguerre@example.fr</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Google Scholar</a></li>
+        <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="#" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </div>
+
+    <div class="section-block">
+      <h2 class="block-title"><span class="block-index">01</span>Intérêts de recherche</h2>
+      <ul class="tag-list">
+        <!-- MODIFIER : adapte la liste de mots-clés à ton sujet -->
+        <li>Économétrie appliquée</li>
+        <li>Modèles à variables instrumentales</li>
+        <li>Données de panel</li>
+        <li>Économie du travail</li>
+        <li>Inférence causale</li>
+        <li>Machine learning &amp; économétrie</li>
+      </ul>
+    </div>
+
+    <div class="section-block">
+      <h2 class="block-title"><span class="block-index">02</span>Parcours en bref</h2>
+      <ul class="mini-timeline">
+        <!-- MODIFIER : ajuste dates et intitulés -->
+        <li><span class="mt-date">2023 —</span><span>Doctorat en économie, Université Lyon 1 / emlyon Business School</span></li>
+        <li><span class="mt-date">2022</span><span>Master 2 [Intitulé du master], [Établissement]</span></li>
+        <li><span class="mt-date">2020</span><span>Licence [Intitulé], [Établissement]</span></li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- ============ PUBLICATIONS ============ -->
+  <section id="publications" class="tab-panel" role="tabpanel">
+    <div class="panel-head">
+      <h1>Publications</h1>
+      <p class="panel-sub">Working papers, articles publiés et travaux en cours.</p>
+    </div>
+
+    <div class="filter-row" role="tablist" aria-label="Filtrer les publications">
+      <button class="filter-btn is-active" data-filter="all">Tout</button>
+      <button class="filter-btn" data-filter="published">Publié</button>
+      <button class="filter-btn" data-filter="working">Working paper</button>
+      <button class="filter-btn" data-filter="progress">En cours</button>
+    </div>
+
+    <table class="pub-table">
+      <thead>
+        <tr>
+          <th class="col-year">Année</th>
+          <th>Titre</th>
+          <th class="col-status">Statut</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- MODIFIER : remplace ces exemples par tes publications réelles. Duplique une <tr> pour en ajouter. -->
+        <tr data-status="published">
+          <td class="col-year">2025</td>
+          <td>
+            <a class="pub-title" href="#" target="_blank" rel="noopener">Titre de l'article publié</a>
+            <span class="pub-venue">avec [Co-auteur], <em>Nom de la revue</em></span>
+          </td>
+          <td class="col-status"><span class="status-tag status-published">Publié</span></td>
+        </tr>
+        <tr data-status="working">
+          <td class="col-year">2025</td>
+          <td>
+            <a class="pub-title" href="#" target="_blank" rel="noopener">Titre du working paper</a>
+            <span class="pub-venue">Document de travail, [Institution]</span>
+          </td>
+          <td class="col-status"><span class="status-tag status-working">Working paper</span></td>
+        </tr>
+        <tr data-status="progress">
+          <td class="col-year">2026</td>
+          <td>
+            <span class="pub-title pub-title--nolink">Titre du projet en cours</span>
+            <span class="pub-venue">avec [Co-auteur] — en préparation</span>
+          </td>
+          <td class="col-status"><span class="status-tag status-progress">En cours</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ============ ENSEIGNEMENT ============ -->
+  <section id="enseignement" class="tab-panel" role="tabpanel">
+    <div class="panel-head">
+      <h1>Enseignement</h1>
+      <p class="panel-sub">Cours et travaux dirigés assurés pendant le doctorat.</p>
+    </div>
+
+    <div class="course-list">
+      <!-- MODIFIER : remplace par tes cours réels. Duplique un .course-card pour en ajouter. -->
+      <article class="course-card">
+        <span class="course-code">ECON 201</span>
+        <div class="course-body">
+          <h3>Statistiques descriptives</h3>
+          <p class="course-meta">Travaux dirigés · Licence 2 · Université Lyon 1 · 2024–2025</p>
+          <p class="course-desc">Introduction aux méthodes statistiques descriptives et à leur mise en œuvre sous [logiciel].</p>
+        </div>
+      </article>
+
+      <article class="course-card">
+        <span class="course-code">ECON 305</span>
+        <div class="course-body">
+          <h3>Économétrie appliquée</h3>
+          <p class="course-meta">Travaux dirigés · Licence 3 · Université Lyon 1 · 2024–2025</p>
+          <p class="course-desc">Application des modèles de régression linéaire et de leurs extensions à des données réelles.</p>
+        </div>
+      </article>
+
+      <article class="course-card">
+        <span class="course-code">BUS 410</span>
+        <div class="course-body">
+          <h3>Data Analysis for Business</h3>
+          <p class="course-meta">Travaux dirigés · Master 1 · emlyon Business School · 2023–2024</p>
+          <p class="course-desc">Analyse de données appliquée à des cas d'entreprise, sous [logiciel].</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ CV ============ -->
+  <section id="cv" class="tab-panel" role="tabpanel">
+    <div class="panel-head panel-head--cv">
+      <div>
+        <h1>Curriculum Vitae</h1>
+        <p class="panel-sub">Dernière mise à jour : août 2026</p>
+      </div>
+      <!-- MODIFIER : dépose ton CV en PDF dans le dossier du site et adapte le lien -->
+      <a class="btn-download" href="cv-martial-laguerre.pdf" target="_blank" rel="noopener">Télécharger le CV (PDF) ↓</a>
+    </div>
+
+    <div class="cv-grid">
+      <div class="cv-col">
+        <h2 class="block-title"><span class="block-index">01</span>Formation</h2>
+        <ul class="cv-list">
+          <!-- MODIFIER -->
+          <li>
+            <span class="cv-date">2023 — présent</span>
+            <span class="cv-what"><strong>Doctorat en économie</strong><br>Université Lyon 1 / emlyon Business School</span>
+          </li>
+          <li>
+            <span class="cv-date">2021 — 2023</span>
+            <span class="cv-what"><strong>Master 2, [Intitulé]</strong><br>[Établissement]</span>
+          </li>
+          <li>
+            <span class="cv-date">2018 — 2021</span>
+            <span class="cv-what"><strong>Licence, [Intitulé]</strong><br>[Établissement]</span>
+          </li>
+        </ul>
+
+        <h2 class="block-title"><span class="block-index">02</span>Expérience</h2>
+        <ul class="cv-list">
+          <!-- MODIFIER -->
+          <li>
+            <span class="cv-date">2023 — présent</span>
+            <span class="cv-what"><strong>Enseignant vacataire</strong><br>Université Lyon 1 — TD Statistiques &amp; Économétrie</span>
+          </li>
+          <li>
+            <span class="cv-date">2022</span>
+            <span class="cv-what"><strong>Stage de recherche</strong><br>[Institution], [ville]</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="cv-col">
+        <h2 class="block-title"><span class="block-index">03</span>Compétences</h2>
+        <ul class="skill-list">
+          <!-- MODIFIER -->
+          <li><span>Logiciels</span><span>R, Stata, Python, LaTeX</span></li>
+          <li><span>Méthodes</span><span>Données de panel, VI, diff-in-diff</span></li>
+          <li><span>Langues</span><span>Français (natif), Anglais (courant)</span></li>
+        </ul>
+
+        <h2 class="block-title"><span class="block-index">04</span>Distinctions &amp; financements</h2>
+        <ul class="cv-list">
+          <!-- MODIFIER -->
+          <li>
+            <span class="cv-date">2023</span>
+            <span class="cv-what">Contrat doctoral, [organisme financeur]</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© 2026 Martial Laguerre — <a href="mailto:martial.laguerre@example.fr">martial.laguerre@example.fr</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
